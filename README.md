@@ -1,6 +1,6 @@
 # 🔋 ECO STORAGE
 
-![Imagem do Site](./assets/readme-tela.png)
+![Imagem do Site](../assets/readme-tela.png)
 
 ## 📜 Sobre o projeto 
 - A **Eco Storage** é um projeto voltado para o **Armazenamento de Energia Descentralizado para Áreas Rurais e Isoladas**. O diferencial da solução está na **sustentabilidade e acessibilidade** proporcionada pela reutilização de **baterias descartadas**, que prolonga sua vida útil e reduz o impacto ambiental. 
