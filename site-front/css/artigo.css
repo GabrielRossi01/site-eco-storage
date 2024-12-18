@@ -1,0 +1,170 @@
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap');
+
+/* Definição de variáveis de cores e fontes */
+:root{
+    --mix-de-cores: linear-gradient(135deg, #008BF5, #3eafc0, #003EF5);
+    --cor-primaria: white;
+    --cor-secundaria: black;
+    --fonte-principal: 'Inter';
+    --fonte-secundaria: 'Nunito', sans-serif;
+    --fonte-terciaria: 'Orbitron';
+}
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Comportamento de rolagem suave na página */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Definição do corpo da página (fundo gradiente) */
+body{
+    background: var(--mix-de-cores);
+}
+
+/* Estilo do cabeçalho */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 10vh;
+    margin: 1.5rem;
+    margin-left: auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Logo ocupa 40% da largura no cabeçalho */
+.logo{
+    width: 40%;
+}
+
+/* Estilo do menu de navegação */
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 2vw; 
+}
+
+/* Estilo dos links de navegação */
+nav ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 1vw;
+    font-family: var(--fonte-terciaria);
+    font-weight: normal;
+    font-size: 1.2rem;
+    transition: font-weight 0.3s;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+} 
+
+/* Conteúdo principal */
+main {
+    padding: 2rem; 
+    max-width: 50rem; 
+    margin: auto;
+    background-color: #3eafc0;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); 
+    border-radius: 0.6rem; 
+    margin: 4vw auto;
+}
+
+/* Título principal do contéudo */
+main h1 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+    margin-bottom: 1.25rem; 
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Subtítulo */
+main h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: var(--fonte-principal);
+    font-weight: normal;
+    color: var(--cor-primaria);
+    margin-bottom: 2rem;
+}
+
+/* Estilo para os artigos dentro do conteúdo */
+article {
+    margin-bottom: 2rem; 
+    padding: 1.5rem; 
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.5rem; 
+    background-color: var(--cor-primaria);
+}
+
+/* Estilo do título de cada artigo */
+article h3 {
+    color: #2980b9;
+    font-size: 1.4rem;
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 1rem; 
+    border-bottom: 0.2rem solid #2980b9;
+    padding-bottom: 0.5rem;
+}
+
+/* Parágrafos dentro dos artigos */
+article p {
+    margin: 1rem 0; 
+    font-family: var(--fonte-principal);
+    color: #555;
+}
+
+/* Links no rodapé de cada artigo */
+article footer a {
+    color: #2980b9;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-weight: bold;
+}
+
+/* Efeito de hover nos links do rodapé */
+article footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do rodapé */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    background-color: black;
+    opacity: 0.9;
+    padding: 4vw;
+    text-align: center;
+    border-top: 0.4vw solid white;
+}
+
+/* Ajustando a largura da imagem do rodapé */
+.footer img{
+    width: 20%;
+}
+
+/* Estilo do texto no rodapé */
+.footer-textos p{
+    font-family: var(--fonte-secundaria);
+    color: white;
+    font-size: 1rem; 
+    text-decoration: underline;
+    margin: 2vw;
+}

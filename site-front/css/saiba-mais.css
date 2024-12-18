@@ -1,0 +1,194 @@
+
+/* Importação das fontes externas para o site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap');
+
+/* Definindo variáveis */
+:root{
+    --mix-de-cores: linear-gradient(135deg, #008BF5, #3eafc0, #003EF5);
+    --cor-primaria: white;
+    --cor-secundaria: black;
+    --fonte-principal: 'Inter';
+    --fonte-secundaria: 'Nunito', sans-serif;
+    --fonte-terciaria: 'Orbitron';
+}
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Comportamento de rolagem suave no HTML */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Definindo o fundo da página com o gradiente de cores */
+body{
+    background: var(--mix-de-cores);
+}
+
+/* Estilo da barra de navegação */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 10vh;
+    margin: 1.5rem;
+    margin-left: auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Estilo da logo dentro da barra de navegação*/
+.logo{
+    width: 40%;
+}
+
+/* Estilo da lista de navegação */
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+/* Estilo para os itens da lista da navegação */
+nav ul li {
+    margin-left: 2vw; 
+}
+
+/* Estilo para os links de navegação  */
+nav ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 1vw;
+    font-family: var(--fonte-terciaria);
+    font-weight: normal;
+    font-size: 1.2rem;
+    transition: font-weight 0.3s;
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+/* Estilo para o container principal */
+.container {
+    max-width: 50rem; /* Aproximadamente 800px */
+    margin: 0 auto;
+}
+
+/* Títulos principais e secundários */
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: var(--fonte-terciaria);
+    color: #2980b9;
+    margin-bottom: 1rem;
+    border-bottom: 0.2rem solid #2980b9;
+    padding-bottom: 0.5rem;
+}
+
+/* Estilo para os parágrafos */
+p {
+    margin-bottom: 2rem;
+    color: #555;
+    font-size: 1rem; 
+    font-family: var(--fonte-principal);
+}
+
+/* Estilos para as seções */
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--cor-primaria);
+    border-radius: 0.7rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a imagem */
+.imagem-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+    margin: 0 auto;
+}
+
+/* Estilos para lista de benefícios */
+.beneficios-lista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.beneficios-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 0.3rem;
+}
+
+.beneficios-item img {
+    width: 3rem; 
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.beneficios-titulo {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.beneficios-item p {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.beneficios-item p:not(.beneficios-titulo) {
+    color: #555;
+}
+
+/* Estilo para o rodapé da página */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    background-color: black;
+    opacity: 0.9;
+    padding: 4vw;
+    text-align: center;
+    border-top: 0.4vw solid white;
+}
+
+/* Estilo para a iamgem do rodapé */
+.footer img{
+    width: 20%;
+}
+
+/* Estilo para os textos do rodapé */
+.footer-textos p{
+    font-family: var(--fonte-secundaria);
+    color: white;
+    font-size: 1rem; 
+    text-decoration: underline;
+    margin: 2vw;
+}

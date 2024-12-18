@@ -1,0 +1,147 @@
+
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap');
+
+/* Definição de variáveis de cores e fontes */
+:root{
+    --mix-de-cores: linear-gradient(135deg, #008BF5, #3eafc0, #003EF5);
+    --cor-primaria: white;
+    --cor-secundaria: black;
+    --fonte-principal: 'Inter';
+    --fonte-secundaria: 'Nunito', sans-serif;
+    --fonte-terciaria: 'Orbitron';
+}
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Comportamento de rolagem suave na página */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Definição do corpo da página (fundo gradiente) */
+body{
+    background: var(--mix-de-cores);
+}
+
+/* Estilo do cabeçalho */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 10vh;
+    margin: 1.5rem;
+    margin-left: auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Logo ocupa 40% da largura no cabeçalho */
+.logo{
+    width: 40%;
+}
+
+/* Estilo do menu de navegação */
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 2vw; 
+}
+
+/* Estilo dos links de navegação */
+nav ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 1vw;
+    font-family: var(--fonte-terciaria);
+    font-weight: normal;
+    font-size: 1.2rem;
+    transition: font-weight 0.3s;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+} 
+
+/* Estilo da introdução */
+.container{
+    display: flex;
+    margin-top: 30vh;
+}
+
+.intro h1{
+    margin-left: 13vw;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+}
+
+.intro h2{
+    font-family: var(--fonte-terciaria);
+    opacity: 0.7;
+    margin-left: 13.5vw;
+    margin-top: 0.5rem;
+}
+
+/* Estilizando a classe botao */
+.botao {
+    display: flex;
+    background-color: #003EF5;
+    width: 12.5rem;
+    text-align: center;
+    justify-content: center;
+    padding: 1.25rem 2.25rem;
+    font-size: 1.25rem;
+    border-radius: 2.25rem;
+    transition: all 0.3s ease-in-out;
+    margin: 5vh auto;
+    margin-left: 28rem;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #0077ff;
+    transform: scale(1.05);
+}
+
+
+/* Estilo do rodapé */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    background-color: black;
+    opacity: 0.9;
+    padding: 4vw;
+    text-align: center;
+    border-top: 0.4vw solid white;
+}
+
+/* Ajustando a largura da imagem do rodapé */
+.footer img{
+    width: 20%;
+}
+
+/* Estilo do texto no rodapé */
+.footer-textos p{
+    font-family: var(--fonte-secundaria);
+    color: white;
+    font-size: 1rem; 
+    text-decoration: underline;
+    margin: 2vw;
+}

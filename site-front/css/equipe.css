@@ -1,0 +1,209 @@
+
+/* Importação das fontes externas para o site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&display=swap');
+
+/* Definindo variáveis */
+:root{
+    --mix-de-cores: linear-gradient(135deg, #008BF5, #3eafc0, #003EF5);
+    --cor-primaria: white;
+    --cor-secundaria: black;
+    --fonte-principal: 'Inter';
+    --fonte-secundaria: 'Nunito', sans-serif;
+    --fonte-terciaria: 'Orbitron';
+}
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Comportamento de rolagem suave no HTML */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Definindo o fundo da página com o gradiente de cores */
+body{
+    background: var(--mix-de-cores);
+}
+
+/* Estilo da barra de navegação */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 10vh;
+    margin: 1.5rem;
+    margin-left: auto;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Estilo da logo dentro da barra de navegação*/
+.logo{
+    width: 40%;
+}
+
+/* Estilo da lista de navegação */
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+/* Estilo para os itens da lista da navegação */
+nav ul li {
+    margin-left: 2vw; 
+}
+
+/* Estilo para os links de navegação  */
+nav ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 1vw;
+    font-family: var(--fonte-terciaria);
+    font-weight: normal;
+    font-size: 1.2rem;
+    transition: font-weight 0.3s;
+}
+
+/* Efeito de hover nos links de navegação */
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+/* Estilo do título principal na página */
+h1{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-terciaria);
+}
+
+/* Estilo para a seção de equipe */
+.equipe{
+    display: flex;
+    justify-content: center; 
+    gap: 5vw; 
+    padding: 4vw;
+    flex-wrap: wrap; 
+    max-width: 90%; 
+    margin: 0 auto; 
+    margin-top: 3vh;
+}
+
+/* Estilo para cada membro da equipe */
+.membro{
+    background-color: #f0f0f0;
+    border: 2px solid var(--cor-secundaria); 
+    padding: 2vw;
+    border-radius: 8px; 
+    max-width: 30%;
+    text-align: center;
+    font-size: 1.1em; 
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efeito de hover nos cartões de membro */
+.membro:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+/* Estilo para as fotos dos membros */
+.membro-foto{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para os links de e-mail dos membros */
+a.email {
+    padding: 5px 10px; 
+    text-decoration: none;
+    color: #6200ff;
+}
+
+/* Efeito de hover nos links de e-mail */
+a.email:hover{
+    text-decoration: underline;
+}
+
+/* Estilo para os subtítulos nas legendas das fotos */
+figcaption h2 {
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+}
+
+/* Estilo para o texto nas legendas das fotos */
+figcaption p {
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+    margin-top: 1vw;
+}
+
+/* Estilo para os links das redes sociais */
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+/* Estilo para os links das redes sociais */
+.social-links a {
+    font-family: var(--fonte-principal);
+    margin-top: 1vw;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+}
+
+/* Estilo de hover nos links das redes sociais */
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os ícones das redes sociais */
+.social-links i{
+    margin-right: 5px;
+}
+
+.fab.fa-linkedin {
+    color: #005eff;
+}
+
+/* Estilo para o rodapé da página */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    background-color: black;
+    opacity: 0.9;
+    padding: 4vw;
+    text-align: center;
+    border-top: 0.4vw solid white;
+}
+
+/* Estilo para a iamgem do rodapé */
+.footer img{
+    width: 20%;
+}
+
+/* Estilo para os textos do rodapé */
+.footer-textos p{
+    font-family: var(--fonte-secundaria);
+    color: white;
+    font-size: 1rem; 
+    text-decoration: underline;
+    margin: 2vw;
+}
